@@ -31,8 +31,20 @@ public class Results {
 					+ Exams.Total() + "\n";
 			System.out.println(out);
 		} else if (z == 2) {
-			String out = "Final %:" + Exams.Percentage() + "%";
+			String out = "Average Percentage:" + Exams.Percentage() + "%";
 			System.out.println(out);
+			if (Exams.Percentage() < 60) {
+				Exams.Failed();
+			} else if ((a * 100) / 150 < 60) {
+				System.out.println("Student failed Physics");
+			} else if ((b * 100) / 150 < 60) {
+				System.out.println("Student failed Chemistry");
+			} else if ((c * 100) / 150 < 60) {
+				System.out.println("Student failed Biology");
+			} else {
+				System.out.println("Student passed");
+			}
 		}
+
 	}
 }

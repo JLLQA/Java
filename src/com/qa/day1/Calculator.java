@@ -1,4 +1,5 @@
 package com.qa.day1;
+
 import java.util.Scanner;
 
 public class Calculator {
@@ -19,7 +20,7 @@ public class Calculator {
 		System.out.println("Division = 4");
 
 		int c = num.nextInt();
-		
+
 		num.close();
 
 		System.out.println("Answer:");
@@ -36,8 +37,12 @@ public class Calculator {
 			System.out.println(cc);
 
 		} else if (c == 4) {
-			double dd = Operators.Division(a, b);
-			System.out.println(dd);
+			if (a < b) {
+				System.out.println("Division cannot be performed");
+			} else {
+				double dd = Operators.Division(a, b);
+				System.out.println(dd);
+			}
 
 		}
 

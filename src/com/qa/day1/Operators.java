@@ -21,5 +21,4 @@ public class Operators {
 		double Ans = a / b;
 		return Ans;
 	}
-
 }
