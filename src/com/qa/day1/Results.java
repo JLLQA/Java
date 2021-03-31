@@ -16,25 +16,23 @@ public class Results {
 		System.out.println("Enter Biology result:");
 		int c = test.nextInt();
 
-		System.out.println("Select option:");
-		System.out.println("Individual and total marks - 1");
-		System.out.println("Overall exam percentage - 2");
+		Exams.phy = a;
+		Exams.chm = b;
+		Exams.bio = c;
+
+		System.out.println(
+				"Select option:" + "\n" + "Individual and total marks - 1" + "\n" + "Overall exam percentage - 2");
 
 		int z = test.nextInt();
 		test.close();
 
 		if (z == 1) {
-			int aa = Exams.Total(a, b, c);
-			System.out.println("Physics: " + a);
-			System.out.println("Chemistry: " + b);
-			System.out.println("Biology: " + c);
-			System.out.println("Total marks:" + aa);
+			String out = "Physics: " + a + "\n" + "Chemistry: " + b + "\n" + "Biology: " + c + "\n" + "Total marks: "
+					+ Exams.Total() + "\n";
+			System.out.println(out);
 		} else if (z == 2) {
-			double bb = Exams.Percentage(a, b, c);
-			String temp = "Final %:" + bb + "%";
-			System.out.println(temp);
+			String out = "Final %:" + Exams.Percentage() + "%";
+			System.out.println(out);
 		}
-
 	}
-
 }
