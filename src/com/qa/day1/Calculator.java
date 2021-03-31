@@ -1,5 +1,4 @@
 package com.qa.day1;
-
 import java.util.Scanner;
 
 public class Calculator {
@@ -20,6 +19,8 @@ public class Calculator {
 		System.out.println("Division = 4");
 
 		int c = num.nextInt();
+		
+		num.close();
 
 		System.out.println("Answer:");
 
