@@ -45,6 +45,7 @@ public class Garage {
 	}
 
 	public void clear() {
-		vehicle = null;
+		vehicle.clear();
+		System.out.println("cleared");
 	}
 }

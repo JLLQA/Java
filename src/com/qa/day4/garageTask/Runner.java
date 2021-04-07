@@ -30,10 +30,9 @@ public class Runner {
 		garage.bill(tank);
 		System.out.println(" ");
 
-		garage.search("blue");
-
-		// garage.clear();
-
+		garage.search("car");
+		
+		//garage.clear();
 	}
 
 }

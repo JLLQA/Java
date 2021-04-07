@@ -9,6 +9,6 @@ public class Tank extends Vehicle {
 
 	public void infoSheet() {
 		System.out.println("Number of seats: " + super.getSeats() + ", Number of wheels: " + super.getWheels()
-				+ ", Engine: " + super.getSize() + ", Cruise control: " + bigCannon);
+				+ ", Engine: " + super.getSize() + ", Big cannon: " + bigCannon);
 	}
 }
