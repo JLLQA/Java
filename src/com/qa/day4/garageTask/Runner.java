@@ -31,7 +31,7 @@ public class Runner {
 		System.out.println(" ");
 
 		garage.search("car");
-		
+		garage.print();
 		//garage.clear();
 	}
 

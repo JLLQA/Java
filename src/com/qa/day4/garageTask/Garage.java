@@ -31,7 +31,6 @@ public class Garage {
 		System.out.println("-----------------------");
 		System.out.println("Total bill: £" + df.format(total));
 		System.out.println("-----------------------");
-
 	}
 
 	// search vehicle by id
@@ -47,5 +46,11 @@ public class Garage {
 	public void clear() {
 		vehicle.clear();
 		System.out.println("cleared");
+	}
+
+	public void print() {
+		for (Vehicle v : vehicle) {
+			System.out.println(v.getId());
+		}
 	}
 }
