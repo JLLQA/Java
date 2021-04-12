@@ -30,3 +30,6 @@ Day 5:
   * Calculator
   * Person (wip)
   * Game
+
+Day 6:
+* Exceptions
