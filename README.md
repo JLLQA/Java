@@ -33,3 +33,10 @@ Day 5:
 
 Day 6:
 * Exceptions
+* Tasks
+  * Bank
+
+Day 7:
+* Generics
+* Optional
+* Singleton
